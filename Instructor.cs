@@ -7,11 +7,17 @@ namespace StudentExercises
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string SlackHandle { get; set; }
-        public int Cohort { get; set; }
-        public List<Exercise> exerciseList;
-        public void AssignExercise(Exercise exercise) 
+        public Cohort Cohort { get; set; }
+        public Instructor(string firstName, string lastName, string slack, Cohort cohort)
         {
-            exerciseList.Add(exercise);
+            FirstName = firstName;
+            LastName = lastName;
+            SlackHandle = slack;
+            Cohort = cohort;
+        }
+        public void AssignExercise(Exercise exercise, Student student) 
+        {
+            student.Exercise.Add(exercise);
         }
     }
 }
