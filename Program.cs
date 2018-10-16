@@ -7,39 +7,14 @@ namespace StudentExercises
     {
         static void Main(string[] args)
         {
-            Cohort c26 = new Cohort()
-            {
-                Name = "25",
-            };
-            Cohort c27 = new Cohort()
-            {
-                Name = "25",
-            };
-            Cohort c28 = new Cohort()
-            {
-                Name = "25",
-            };
+            Cohort c26 = new Cohort("26");
+            Cohort c27 = new Cohort("27");
+            Cohort c28 = new Cohort("28");
 
-            Exercise ex1 = new Exercise()
-            {
-                Name = "FizzBuzz",
-                Language = "JavaScript"
-            };
-            Exercise ex2 = new Exercise()
-            {
-                Name = "Nutshell",
-                Language = "JavaScript"
-            };
-            Exercise ex3 = new Exercise()
-            {
-                Name = "Bangazon",
-                Language = "C#"
-            };
-            Exercise ex4 = new Exercise()
-            {
-                Name = "Weather",
-                Language = "Python"
-            };
+            Exercise ex1 = new Exercise("FizzBuzz", "JavaScript");
+            Exercise ex2 = new Exercise("Nutshell", "JavaScript");
+            Exercise ex3 = new Exercise("Bangazon", "C#");
+            Exercise ex4 = new Exercise("Weather", "Python");
 
             Instructor Steve = new Instructor("Steve", "Brownlee", "Steve", c26);
             Instructor Meg = new Instructor("Meg", "Ducharme", "Meg", c27);
