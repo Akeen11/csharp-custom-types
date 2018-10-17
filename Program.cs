@@ -15,7 +15,7 @@ namespace StudentExercises
             Exercise ex1 = new Exercise("FizzBuzz", "JavaScript");
             Exercise ex2 = new Exercise("Nutshell", "JavaScript");
             Exercise ex3 = new Exercise("Bangazon", "C#");
-            Exercise ex4 = new Exercise("Weather", "Python");
+            Exercise ex4 = new Exercise("Weather", "React");
 
             Instructor Steve = new Instructor("Steve", "Brownlee", "Steve", c26);
             Instructor Meg = new Instructor("Meg", "Ducharme", "Meg", c27);
@@ -23,7 +23,7 @@ namespace StudentExercises
 
             Student Daffy = new Student("Daffy", "Duck", "Daf", c26);
             Student Dewey = new Student("Dewey", "Duck", "Dew", c27);
-            Student Donald = new Student("Donald", "Duck", "Donny", c28);
+            Student Donald = new Student("Donald", "Duck", "Don", c28);
 
             Steve.AssignExercise(ex1, Daffy);
             Meg.AssignExercise(ex2, Dewey);
